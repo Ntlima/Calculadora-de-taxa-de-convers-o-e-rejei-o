@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Métricas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">📊 Calculadora de  Taxa de Conversão e Rejeição</h2>
+
+    <div class="card p-4 shadow">
+
+        <!-- CONVERSÃO -->
+        <h4>Conversão (%)</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="number" id="convAtual" class="form-control" placeholder="Mês Atual">
+            </div>
+            <div class="col-md-4">
+                <input type="number" id="convPassado" class="form-control" placeholder="Mês Passado">
+            </div>
+            <div class="col-md-4">
+                <input type="number" id="convAno" class="form-control" placeholder="Ano Passado">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- REJEIÇÃO -->
+        <h4>Rejeição (%)</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <input type="number" id="rejAtual" class="form-control" placeholder="Mês Atual">
+            </div>
+            <div class="col-md-4">
+                <input type="number" id="rejPassado" class="form-control" placeholder="Mês Passado">
+            </div>
+            <div class="col-md-4">
+                <input type="number" id="rejAno" class="form-control" placeholder="Ano Passado">
+            </div>
+        </div>
+
+        <button class="btn btn-primary mt-4 w-100" onclick="calcular()">Calcular</button>
+
+        <hr>
+
+        <!-- RESULTADOS -->
+        <div id="resultado" class="mt-3"></div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

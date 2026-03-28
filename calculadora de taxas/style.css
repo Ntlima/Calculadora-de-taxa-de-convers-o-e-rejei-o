@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(135deg, #ac82d8, #c936ee);
+    color: #fff;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #000;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#resultado {
+    font-size: 18px;
+}
